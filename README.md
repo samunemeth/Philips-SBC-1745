@@ -36,24 +36,30 @@ however, which works almost exactly the same way. A scan is available on the
 
 # Programming
 
-The calculator has two program slots. The two programs slots have space for
-45 steps *in total*. Some instructions use two steps of memory. This is
-noted below for the appropriate instructions.
+The calculator has two program slots. The two programs slots have space for 45
+steps *in total*. Generally, one key press is considered as one step, however
+some instructions use two steps of memory. This is noted below for the affected
+instructions.
 
 Programming can be started by entering the LRN1 or LRN2 mode. If you start
 entering instructions, the previous program is automatically cleared and the
 new instructions will be recorded. A program can be explicitly cleared by
-pressing CLA. An error is displayed if the number of steps exceeds the memory
-capacity. After entering, switching back to the DEC mode saves the program.
+pressing CLA while in one of the LRN modes. An error is displayed if the number
+of steps exceeds the memory capacity. After entering, switching back to the DEC
+mode saves the program.
 
 Programs can be run with the RUN1 and RUN2 keys respectively. If input is
 requested, `-01-` will be displayed. The one indicates that this is the first
-input to the program. After entering a number, the respective run key has to
-be pressed again to continue the program. The program may halt to display a
-number. In this case, a small HLT indicator will be shown. The respective
-run key has to be pressed to continue the execution of the program.
+input to the program. After entering a number, the respective run key has to be
+pressed again to continue the program. The program may halt to display a
+number. In this case, a small HLT indicator will be shown. The respective run
+key has to be pressed to continue the execution of the program.
 
-Some example programs can be found in the [examples folder](./examples).
+Some example programs can be found in the [examples folder](./examples). The
+examples do not assume anything about the statuses of the registers, however
+they will leave them in arbitrary states after execution. All input to the
+examples is handled with ENT instructions, and all result will either be
+displayed with the help of a HLT instruction or after the program terminates.
 
 ## Available Instructions
 
