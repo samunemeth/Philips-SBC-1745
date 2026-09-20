@@ -1,0 +1,42 @@
+: Calculate the real roots of a quadratic equation.
+: The equation should be in the form:
+:   ax^2 + bx + c = 0
+: If there is only one real root, it is displayed twice.
+: If there are no real roots, and error occurs.
+
+: -01-          a
+: -02-          b
+: -03-          c
+
+01  ENT         : a, Entering clears the display.
+02  MIN
+03  M+          : (2a)->M, We store it like this as we only need 2a never a.
+04  ENT         : b
+05  STO
+06   [1]        : b->R1, We need b later.
+07  /
+08  MR          : (2a)->X
+09  =           : v = b / 2a, This is one part of the solution formula.
+10  X-S         
+11   [1]        : v->R1, b->X, We put the first part aside, and start with b.
+12  X^2
+13  -
+14  MR          : (2a)->X
+15  *
+16  ENT         : c
+17  =           : b^2 - 2ac
+18  =           : b^2 - 4ac, The last outer step is repeated.
+19  2RX
+20  /
+21  MR          : (2a)->X
+22  =           : w = sqrt(b^2 - 4ac) / 2a, The other part of the formula.
+23  MIN         : w->M, We will need this part later.
+24  -
+25  RCL
+26   [1]        : v->X
+27  =           : x1 = -v + w, The first root.
+28  HLT
+29  -
+30  MR          : w->X
+31  =           : v
+32  =           : x2 = -v - w, The second root.
