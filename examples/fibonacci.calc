@@ -1,6 +1,6 @@
-: Calculate the nth Fibonacci number.
+: Calculate the i-th Fibonacci number.
 
-: -01-          n
+: -01-          i
 
 : a in M/X      Larger number in the sequence.
 : b in R1       Smaller number in the sequence.
