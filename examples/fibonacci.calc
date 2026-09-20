@@ -6,22 +6,22 @@
 : b in R1       Smaller number in the sequence.
 : i in M/X      Remaining loops.
 
-01   C          : Clear display.
-02   STO
-03    [1]       : 0->b, Initialize the smaller number to be 0.
-04   1
-05   MIN        : 1->i, Initialize the larger number to be 1.
-06   ENT        : i, Index of the Fibonacci number.
-07   GOTO [6]   : Jump into the loop. A jump to the decrementing step is made
+01  C           : Clear display.
+02  STO
+03   [1]        : 0->b, Initialize the smaller number to be 0.
+04  1
+05  MIN         : 1->i, Initialize the larger number to be 1.
+06  ENT         : i, Index of the Fibonacci number.
+07  GOTO [6]    : Jump into the loop. A jump to the decrementing step is made
                 : as the entered index is one larger than desired.
-08 . X-M        : i'->M, a->X, Put the index away, get the larger number out.
-09   +
-10   X-S        
-11    [1]       : a->b', b->X, The larger number now will be the new small.
-12   =          : a + b, Calculate the next number in the sequence.
-13   X-M        : a'->M, i->X, Put the result away, get the index out.
-14 . -          : Loop is entered here.
-15   1
-16   =          : i - 1, Decrement the index.
-17   X>0 [-9]   : Jump if the index is still positive.
-18   X-M        : a->X, Display the resulting larger number.
+08. X-M         : i'->M, a->X, Put the index away, get the larger number out.
+09  +
+10  X-S
+11   [1]        : a->b', b->X, The larger number now will be the new small.
+12  =           : a + b, Calculate the next number in the sequence.
+13  X-M         : a'->M, i->X, Put the result away, get the index out.
+14. -           : Loop is entered here.
+15  1
+16  =           : i - 1, Decrement the index.
+17  X>0 [-9]    : Jump if the index is still positive.
+18  X-M         : a->X, Display the resulting larger number.
