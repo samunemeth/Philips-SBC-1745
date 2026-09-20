@@ -34,7 +34,92 @@ There are full manuals available for the *Canon F-73P Scientific Calculator*
 however, which works almost exactly the same way. A scan is available on the
 [Internet Archive](https://archive.org/details/canon-f-73-p-instructions/page/n27/mode/2up).
 
-## Sources
+# Programming
+
+The calculator has two program slots. The two programs slots have space for
+45 steps *in total*. Some instructions use two steps of memory. This is
+noted below for the appropriate instructions.
+
+Programming can be started by entering the LRN1 or LRN2 mode. If you start
+entering instructions, the previous program is automatically cleared and the
+new instructions will be recorded. A program can be explicitly cleared by
+pressing CLA. An error is displayed if the number of steps exceeds the memory
+capacity. After entering, switching back to the DEC mode saves the program.
+
+Programs can be run with the RUN1 and RUN2 keys respectively. If input is
+requested, `-01-` will be displayed. The one indicates that this is the first
+input to the program. After entering a number, the respective run key has to
+be pressed again to continue the program. The program may halt to display a
+number. In this case, a small HLT indicator will be shown. The respective
+run key has to be pressed to continue the execution of the program.
+
+Some example programs can be found in the [examples folder](./examples).
+
+## Available Instructions
+
+> [!NOTE]  
+> This part is not complete yet.
+
+`C`
+`CE`
+
+`ENT` shown as `->([X])`
+`HLT`
+
+Where **d** can be an integer from -9 to 9.
+`X>0 [d]`
+`X<=M [d]`
+`GOTO [d]`
+
+The following three are all considered as two instructions,
+and therefore written on two lines.
+Where **r** can be an integer from 1 to 6.
+`STO
+  [r]`
+`RCL
+  [r]`
+`X-S
+  [r]`
+
+`MIN`
+`M+`
+`MR`
+`X-M`
+
+`+/-`
+`0` to `9` : digits
+`.` : decimal point
+
+`/` shown as `÷`
+`*` shown as `×`
+`-`
+`+`
+
+`1/X`
+`X-Y`
+`(`
+`)`
+`=`
+
+`2RX` : square root
+`3RX` : cube root
+`XRY`
+`X^2`
+`Y^X`
+
+`e^X`
+`ln`
+`10^X`
+`log`
+
+`n!`
+
+12 trig functions
+
+unit conversions count as 2 steps
+
+
+# Sources
 
 **Version 1**
   - [Calcmuseum - Philips SBC1745 (version-1)](https://www.calcuseum.com/SCRAPBOOK/BONUS/35096/1.htm)
@@ -53,3 +138,5 @@ however, which works almost exactly the same way. A scan is available on the
 
 **Canon F-73P Scientific Calculator**
   - [Internet Archive - User Manual Scan](https://archive.org/details/canon-f-73-p-instructions/page/n27/mode/2up)
+
+
