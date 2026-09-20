@@ -3,6 +3,12 @@
 This page aims to collect resources and information about the Philips SBC 1745
 Programmable Scientific Calculator.
 
+Unfortunately, a full manual for this calculator is currently not available on
+the internet.
+
+> [!NOTE]  
+> This page is still under construction.
+
 ## Versions
 
 There are at least 3 versions of this calculator. Two with a black top part,
