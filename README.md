@@ -1,16 +1,28 @@
 # Philips SBC 1745 Programmable Scientific Calculator
 
+This page aims to collect resources and information about the Philips SBC 1745
+Programmable Scientific Calculator.
+
+## Versions
+
 There are at least 3 versions of this calculator. Two with a black top part,
 one of which lacks the red text from under the buttons (Version 1) and one that
 has the text printed (Version 2), and one with a silver top part (Version 3).
 I might be mixing Version 1 and Version 2 up, as it is not clear from the
 sources which one came first, and the image for Version 1 and Version 2 is same
 on *Calcmuseum*.
+
 I have the Version 3, the one with the silver top part. I also have the
 original case for it.
 
+<p align="center" width="100%">
+  <img src="./assets/front.jpg" width="45%" alt="Front of the Calculator">
+  <img src="./assets/back.jpg" width="45%" alt="Back of the Calculator">
+  <br/>
+  <img src="./assets/case.jpg" width="90%" alt="Calculator with Case">
+</p>
 
-# Sources
+## Sources
 
 **Version 1**
   - [Calcmuseum - Philips SBC1745 (version-1)](https://www.calcuseum.com/SCRAPBOOK/BONUS/35096/1.htm)
