@@ -1,10 +1,7 @@
 # Philips SBC 1745 Programmable Scientific Calculator
 
-This page aims to collect resources and information about the Philips SBC 1745
-Programmable Scientific Calculator.
-
-Unfortunately, a full manual for this calculator is currently not available on
-the internet.
+This page aims to collect resources and information about the *Philips SBC 1745
+Programmable Scientific Calculator*.
 
 > [!NOTE]  
 > This page is still under construction.
@@ -28,6 +25,15 @@ original case for it.
   <img src="./assets/case.jpg" width="90%" alt="Calculator with Case">
 </p>
 
+## Manual
+
+Unfortunately, a full manual for this calculator is currently not available on
+the internet.
+
+There are full manuals available for the *Canon F-73P Scientific Calculator*
+however, which works almost exactly the same way. A scan is available on the
+[Internet Archive](https://archive.org/details/canon-f-73-p-instructions/page/n27/mode/2up).
+
 ## Sources
 
 **Version 1**
@@ -44,3 +50,6 @@ original case for it.
 **Version 3**
   - [Calcmuseum - Philips SBC1745 (version-3)](https://www.calcuseum.com/SCRAPBOOK/BONUS/35095/1.htm)
   - [www.calculatormuseum.nl - Philips SBC 1745](https://www.calculatormuseum.nl/calculators/philips_sbc1745.html)
+
+**Canon F-73P Scientific Calculator**
+  - [Internet Archive - User Manual Scan](https://archive.org/details/canon-f-73-p-instructions/page/n27/mode/2up)
