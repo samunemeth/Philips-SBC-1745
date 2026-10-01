@@ -28,7 +28,8 @@ original case for it.
 ## Manual
 
 Unfortunately, a full manual for this calculator is currently not available on
-the internet.
+the internet. I have reached out to Philips, but they also do not have a
+digital version of the manual.
 
 There are full manuals available for the *Canon F-73P Scientific Calculator*
 however, which works almost exactly the same way. A scan is available on the
