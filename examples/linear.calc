@@ -1,0 +1,56 @@
+: Calculate the solutions for x and y for a pair of linear equations.
+: The equation should be in the form:
+:   ax + by = c
+:   dx + ey = f
+: If the linear system is inconsistent, an error occurs.
+: I have forgotten how this works, but it sure does.
+
+: -01-          a
+: -02-          b
+: -03-          c
+: -04-          d
+: -05-          e
+: -06-          f
+
+01 ENT          : a
+02 STO
+03  [1]
+04 -
+05 ENT          : b
+06 MIN
+07 *
+08 ENT          : c
+09 STO
+10  [2]
+11 CE
+12 ENT          : d
+13 /
+14 ENT          : e
+15 STO
+16  [3]
+17 =
+18 1/X
+19 *
+20 (
+21 RCL
+22  [2]
+23 -
+24 MR
+25 *
+26 ENT          : f
+27 /
+28 RCL
+29  [3]
+30 =            : Solution for x.
+31 HLT
+32 *
+33 RCL
+34  [1]
+35 -
+36 RCL
+37  [2]
+38 X-Y
+39 =
+40 /
+41 MR
+42 =            : Solution for y.
